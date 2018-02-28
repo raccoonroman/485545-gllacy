@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Roman Kushnir](https://up.htmlacademy.ru/htmlcss/20/user/485545).
-* Наставник: `Неизвестно`.
+* Наставник: [Роман Марченко](https://up.htmlacademy.ru/htmlcss/20/user/505487).
 
 ---
 
