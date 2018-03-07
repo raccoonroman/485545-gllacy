@@ -467,11 +467,17 @@ body {
     .subscribe {
         display: flex;
         flex-direction: column;
-        background: #F8F7F4;
-        border: 6px solid #f8f7f4;
-        border-image-source: url(../img/bg/Почтовый-фон.svg);
-        border-image-slice: 2.55% 1%;
-        border-image-width: 6px;
+        border: 5px solid transparent;
+        border-left-width: 6px;
+        background-image: 
+            linear-gradient(#f8f7f4, #f8f7f4), 
+            repeating-linear-gradient(135deg, 
+                #f8f7f4 7px, #92cdff 7px,
+                #92cdff 14px, #f8f7f4 14px, 
+                #f8f7f4 21px, #fe9e90 21px,
+                #fe9e90 28px, #f8f7f4 28px, #f8f7f4 35px);
+        background-origin: padding-box, border-box;
+        background-clip: padding-box, border-box;
     }
 }
 
