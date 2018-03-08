@@ -137,7 +137,7 @@ body {
     padding-left: 45px;
 
     &::before {
-        content: url(../img/icons/Корзина2.svg);
+        content: url(../img/icons/basket.svg);
         position: absolute;
         top: 6px;
         left: 15px;
@@ -149,7 +149,7 @@ body {
     padding-left: 45px;
 
     &::before {
-        content: url(../img/icons/Вход.svg);
+        content: url(../img/icons/login.svg);
         position: absolute;
         top: 6px;
         left: 15px;
@@ -161,7 +161,7 @@ body {
     font-size: 0;
 
     &::before {
-        content: url(../img/icons/Лупа.svg);
+        content: url(../img/icons/loupe.svg);
         position: absolute;
         top: 7px;
         left: 8px;
@@ -320,11 +320,11 @@ body {
 
 .raspberries {
     margin-right: 1200px-27*2-560*2; 
-    background: url(../img/bg/Малиновый-фон.jpg) no-repeat #A9163E;
+    background: url(../img/bg/raspberry.jpg) no-repeat #A9163E;
 }
 
 .chocolate {
-    background: url(../img/bg/Шоколадный-фон.jpg) no-repeat #4E2814;
+    background: url(../img/bg/chocolate.jpg) no-repeat #4E2814;
 }
 
 
@@ -393,7 +393,7 @@ body {
     width: 100%;
     min-height: 300px;
     padding: 25px 20px 0 20px;
-    background: url(../img/bg/Вафельный-фон.jpg) #EBDDC3;
+    background: url(../img/bg/waffle.jpg) #EBDDC3;
     border-radius: 15px;
 
     h2 {
@@ -418,28 +418,28 @@ body {
 }
 
 .adventage-production::before {
-    content: url(../img/icons/Мороженко.svg);
+    content: url(../img/icons/ice-cream.svg);
     position: absolute;
     top: 0;
     left: 0;
 }
 
 .adventage-partners::before {
-    content: url(../img/icons/Корова.svg);
+    content: url(../img/icons/cow.svg);
     position: absolute;
     top: 0;
     left: 0;
 }
 
 .adventage-materials::before {
-    content: url(../img/icons/Листик.svg);
+    content: url(../img/icons/leaf.svg);
     position: absolute;
     top: 0;
     left: 0;
 }
 
 .adventage-delivery::before {
-    content: url(../img/icons/Градусник.svg);
+    content: url(../img/icons/thermometer.svg);
     position: absolute;
     top: 0;
     left: 0;
@@ -461,7 +461,7 @@ body {
     .blog {
         padding-right: 18%;
         margin-right: 1200px-27*2-560*2;
-        background: url(../img/bg/Клубничный-фон.jpg) top right no-repeat #fff;
+        background: url(../img/bg/strawberry.jpg) top right no-repeat #fff;
     }
 
     .subscribe {
@@ -555,7 +555,7 @@ body {
 
 .map {
     height: 430px;
-    background: url(../img/bg/Карта.jpg) center left no-repeat #EDE6C9;
+    background: url(../img/bg/map.jpg) center left no-repeat #EDE6C9;
     background-size: cover;
 }
 
@@ -584,19 +584,19 @@ body {
     }
 
     .social-btn-tw {
-        background: url(../img/icons/Твитер.svg) no-repeat;
+        background: url(../img/icons/twitter.svg) no-repeat;
     }
 
     .social-btn-in {
-        background: url(../img/icons/Инстаграм.svg) no-repeat;
+        background: url(../img/icons/instagram.svg) no-repeat;
     }
 
     .social-btn-fb {
-        background: url(../img/icons/ФБ.svg) no-repeat;
+        background: url(../img/icons/fb.svg) no-repeat;
     }
 
     .social-btn-vk {
-        background: url(../img/icons/ВК.svg) no-repeat;
+        background: url(../img/icons/vk.svg) no-repeat;
     }
 }
 
@@ -621,7 +621,7 @@ body {
     }
 
     .for-suppliers::before {
-        content: url(../img/icons/Сердце.svg);
+        content: url(../img/icons/heart.svg);
         position: absolute;
         top: 3px;
         left: -20px;
