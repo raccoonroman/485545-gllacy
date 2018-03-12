@@ -33,16 +33,24 @@ $border-bottom: 1px solid rgba(255, 255, 255, .2);
 
 .visually-hidden {
     position: absolute;
-    clip: rect(0, 0, 0, 0);
     width: 1px;
     height: 1px;
     margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
 }
 
 ul {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
 }
 
 html,
@@ -167,6 +175,44 @@ body {
         left: 8px;
     }
 }
+
+
+.form-group { /*общая для всех груп*/
+    position: relative;
+    display: flex;
+    margin: 0;
+
+    input {
+        /*flex-grow: 1;*/
+        height: 44px;
+        /*margin-right: 10px;*/
+        padding: 10px;
+        font: inherit;
+        font-weight: 700;
+        color: #000;
+        border: 1px solid rgba(178, 178, 178, .52);
+        border-radius: 10px;
+    }
+
+    label {
+        position: absolute;
+        top: 12px;
+        left: 10px;
+        font-size: 14px;
+        line-height: 24px;
+        color: #999;
+        pointer-events: none;
+        transition-duration: 0.2s;
+    }
+
+    input:focus ~ label {
+        font-size: 11px;
+        line-height: 13px;
+        color: #5b9ddf;
+        transform: translateY(-30px);
+    }
+}
+
 
 .aside-info {
     position: absolute;
@@ -312,7 +358,7 @@ body {
         font-weight: 700;
     }
 
-    a {
+    .btn {
         margin-top: auto;
         margin-left: auto;
     }
@@ -511,47 +557,21 @@ body {
 }
 
 
-.mail-subscribe {
-    position: relative;
-    display: flex;
-    margin: 0;
-    margin-bottom: 15px;
+.form-subscribe {
+
+    .form-group {
+        margin-bottom: 15px;
+    }
 
     input {
         flex-grow: 1;
-        height: 44px;
         margin-right: 10px;
-        padding: 10px;
-        font: inherit;
-        font-weight: 700;
-        color: #000;
-        border: 1px solid rgba(178, 178, 178, .52);
-        border-radius: 10px;
     }
 
     label {
-        position: absolute;
-        top: 12px;
-        left: 10px;
-        line-height: 24px;
-        color: #999;
-        pointer-events: none;
-        transition-duration: 0.2s;
-    }
-
-    .btn {
-        border: none;
-    }
-
-    input:focus ~ label {
-        font-size: 11px;
-        line-height: 13px;
-        color: #5b9ddf;
-        transform: translateY(-30px);
+        font-size: 16px;
     }
 }
-
-
 
 .map {
     height: 430px;
@@ -572,7 +592,6 @@ body {
     justify-content: space-between;
     margin-right: auto;
     width: 182px;
-    font-size: 0;
 
     .social-btn {
         display: inline-block;
@@ -644,6 +663,8 @@ body {
         border-bottom: $border-bottom;
     }
 }
+
+
 
 
 
