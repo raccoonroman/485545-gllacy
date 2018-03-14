@@ -10,7 +10,7 @@
 		<div class="container">
 			<nav class="page-header-nav">
 				<a class="page-header-logo" href="index.html" title="На главную страницу">
-					<img src="img/logos/logo-gllacy.svg" alt="GllacyShop" width="154" height="64">
+					<img src="img/logos/logo-gllacy.svg" alt="Логотип магазина мороженого Глейси" width="154" height="64">
 				</a>
 
 				<ul class="nav-items">
@@ -91,9 +91,9 @@
 
 		<section class="filters">
 			<h2 class="visually-hidden">Фильтр товаров</h2>
-			<form class="form-filter" action="https://echo.htmlacademy.ru" method="post" target="_blank">
+			<form class="form-filter" action="https://echo.htmlacademy.ru" method="get" target="_blank">
 
-				<p class="filter-form-group">
+				<div class="filter-form-group">
 					<label for="filter-sort-field">Сортировка:</label>
 					<select name="filter-sort-field" id="filter-sort-field">
 						<option value="popular" selected>по популярности</option>
@@ -101,64 +101,60 @@
             <option value="expensive">сначала дорогие</option>
             <option value="fatness">по жирности</option>
 					</select>
-				</p>
+				</div>
 
-				<p class="filter-form-group">
+				<div class="filter-form-group">
 					<label for="filter-price-field">Цена: 100 руб. – 500 руб.</label>
 					<input id="filter-price-field" name="filter-price-field" type="range" min="50" max="800" step="50">
-				</p>
+				</div>
 
-				<p class="filter-form-group">
-					<fieldset>
-						<legend>Жирность:</legend>
-						<ul>
-							<li>
-								<input id="radio-fatness-0%" type="radio" name="radio-fatness" value="0">
-								<label for="radio-fatness-0%">0%</label>
-							</li>
-							<li>
-								<input id="radio-fatness-to10%" type="radio" name="radio-fatness" value="+10" checked>
-								<label for="radio-fatness-to10%">до 10%</label>
-							</li>
-							<li>
-								<input id="radio-fatness-to30%" type="radio" name="radio-fatness" value="+30">
-								<label for="radio-fatness-to30%">до 30%</label>
-							</li>
-							<li>
-								<input id="radio-fatness-above30%" type="radio" name="radio-fatness" value="30+">
-								<label for="radio-fatness-above30%">выше 30%</label>
-							</li>
-						</ul>
-					</fieldset>
-				</p>
+				<fieldset class="filter-form-group">
+					<legend>Жирность:</legend>
+					<ul>
+						<li>
+							<input class="visually-hidden" id="radio-fatness-0%" type="radio" name="radio-fatness" value="0">
+							<label for="radio-fatness-0%">0%</label>
+						</li>
+						<li>
+							<input class="visually-hidden" id="radio-fatness-to10%" type="radio" name="radio-fatness" value="+10" checked>
+							<label for="radio-fatness-to10%">до 10%</label>
+						</li>
+						<li>
+							<input class="visually-hidden" id="radio-fatness-to30%" type="radio" name="radio-fatness" value="+30">
+							<label for="radio-fatness-to30%">до 30%</label>
+						</li>
+						<li>
+							<input class="visually-hidden" id="radio-fatness-above30%" type="radio" name="radio-fatness" value="30+">
+							<label for="radio-fatness-above30%">выше 30%</label>
+						</li>
+					</ul>
+				</fieldset>
 
-				<p class="filter-form-group">
-					<fieldset>
-						<legend>Наполнители:</legend>
-						<ul>
-							<li>
-								<input id="checkbox-fillers-chocolate" type="checkbox" name="checkbox-fillers-chocolate" checked>
-								<label for="checkbox-fillers-chocolate">шоколадные</label>
-							</li>
-							<li>
-								<input id="checkbox-fillers-sugar" type="checkbox" name="checkbox-fillers-sugar" checked>
-								<label for="checkbox-fillers-sugar">сахарные присыпки</label>
-							</li>
-							<li>
-								<input id="checkbox-fillers-fruits" type="checkbox" name="checkbox-fillers-fruits">
-								<label for="checkbox-fillers-fruits">фрукты</label>
-							</li>
-							<li>
-								<input id="checkbox-fillers-syrups" type="checkbox" name="checkbox-fillers-syrups">
-								<label for="checkbox-fillers-syrups">сиропы</label>
-							</li>
-							<li>
-								<input id="checkbox-fillers-jams" type="checkbox" name="checkbox-fillers-jams">
-								<label for="checkbox-fillers-jams">джемы</label>
-							</li>
-						</ul>
-					</fieldset>
-				</p>
+				<fieldset class="filter-form-group">
+					<legend>Наполнители:</legend>
+					<ul>
+						<li>
+							<input class="visually-hidden" id="checkbox-fillers-chocolate" type="checkbox" name="checkbox-fillers-chocolate" checked>
+							<label for="checkbox-fillers-chocolate">шоколадные</label>
+						</li>
+						<li>
+							<input class="visually-hidden" id="checkbox-fillers-sugar" type="checkbox" name="checkbox-fillers-sugar" checked>
+							<label for="checkbox-fillers-sugar">сахарные присыпки</label>
+						</li>
+						<li>
+							<input class="visually-hidden" id="checkbox-fillers-fruits" type="checkbox" name="checkbox-fillers-fruits">
+							<label for="checkbox-fillers-fruits">фрукты</label>
+						</li>
+						<li>
+							<input class="visually-hidden" id="checkbox-fillers-syrups" type="checkbox" name="checkbox-fillers-syrups">
+							<label for="checkbox-fillers-syrups">сиропы</label>
+						</li>
+						<li>
+							<input class="visually-hidden" id="checkbox-fillers-jams" type="checkbox" name="checkbox-fillers-jams">
+							<label for="checkbox-fillers-jams">джемы</label>
+						</li>
+					</ul>
+				</fieldset>
 				<button class="btn" type="submit">Применить</button>
 			</form>
 		</section>
