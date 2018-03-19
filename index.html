@@ -32,31 +32,33 @@
 				<ul class="nav-user-items">
 					<li class="nav-user-item nav-user-search">
 						<button class="btn" type="button">Поиск</button>
-						<!--<form class="form-search" action="/search" method="get" target="_blank">
+						<form class="form-search" action="/search" method="get" target="_blank">
 						<p class="form-group">
 							<input id="search-field" type="search" name="search-field" required>
 							<label for="search-field">Что ищем?</label>
 						</p>
-						</form>-->
+						</form>
 					</li>
 
 					<li class="nav-user-item nav-user-login">
 						<button class="btn">Вход</button>
-						<div class="open-form-login">
-							<form class="form-login" action="https://echo.htmlacademy.ru" method="post" target="_blank">
-								<p class="form-group">
-									<input id="login-field" type="text" name="search-field" required>
-									<label for="login-field">Электронная почта</label>
-								</p>
-								<p class="form-group">
-									<input id="password-field" type="password" name="password-field" required>
-									<label for="password-field">Пароль</label>
-								</p>
+						<form class="form-login" action="https://echo.htmlacademy.ru" method="post" target="_blank">
+							<p class="form-group">
+								<input id="login-field" type="text" name="search-field" required>
+								<label for="login-field">Электронная почта</label>
+							</p>
+							<p class="form-group">
+								<input id="password-field" type="password" name="password-field" required>
+								<label for="password-field">Пароль</label>
+							</p>
+							<div class="form-login-control">
 								<button class="btn" type="submit">Войти</button>
-							</form>
-							<a href="#">Забыли пароль?</a>
-							<a href="#">Новая регистрация</a>
-						</div>
+								<div>
+									<a href="#">Забыли пароль?</a><br>
+									<a href="#">Новая регистрация</a>
+								</div>
+							</div>
+						</form>
 					</li>
 
 					<li class="nav-user-item nav-user-basket">
@@ -130,40 +132,40 @@
 				<ul class="catalog-list">
 					<li class="catalog-item">
 						<img class="catalog-item-offer" src="img/offers/product-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267">
-						<img class="catalog-item-hit" src="img/icons/hit.svg" alt="ХИТ" width="61" height="61">
+						<img class="catalog-item-hit" src="img/icons/hit.svg" alt="Хит продаж" width="61" height="61">
 						<b class="catalog-item-price"><span>310 ₽</span> /кг</b>
 						<h3 class="catalog-item-description">
-							<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+							<a class="link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 						</h3>
 						<button class="btn visually-hidden" type="button">Быстрый просмотр</button>
 					</li>
 
 					<li class="catalog-item">
 						<img class="catalog-item-offer" src="img/offers/product-2.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267">
-						<img class="catalog-item-hit" src="img/icons/hit.svg" alt="ХИТ" width="61" height="61">
+						<img class="catalog-item-hit" src="img/icons/hit.svg" alt="Хит продаж" width="61" height="61">
 						<b class="catalog-item-price"><span>380 ₽</span> /кг</b>
 						<h3 class="catalog-item-description">
-							<a href="#">Сливочно-кофейное с кусочками шоколада</a>
+							<a class="link" href="#">Сливочно-кофейное с кусочками шоколада</a>
 						</h3>
 						<button class="btn visually-hidden" type="button">Быстрый просмотр</button>
 					</li>
 
 					<li class="catalog-item">
 						<img class="catalog-item-offer" src="img/offers/product-3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267">
-						<img class="catalog-item-hit" src="img/icons/hit.svg" alt="ХИТ" width="61" height="61">
+						<img class="catalog-item-hit" src="img/icons/hit.svg" alt="Хит продаж" width="61" height="61">
 						<b class="catalog-item-price"><span>355 ₽</span> /кг</b>
 						<h3 class="catalog-item-description">
-							<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+							<a class="link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
 						</h3>
 						<button class="btn visually-hidden" type="button">Быстрый просмотр</button>
 					</li>
 
 					<li class="catalog-item">
 						<img class="catalog-item-offer" src="img/offers/product-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267">
-						<img class="catalog-item-hit" src="img/icons/hit.svg" alt="ХИТ" width="61" height="61">
+						<img class="catalog-item-hit" src="img/icons/hit.svg" alt="Хит продаж" width="61" height="61">
 						<b class="catalog-item-price"><span>415 ₽</span> /кг</b>
 						<h3 class="catalog-item-description">
-							<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+							<a class="link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
 						</h3>
 						<button class="btn visually-hidden" type="button">Быстрый просмотр</button>
 					</li>
@@ -213,11 +215,11 @@
 			</section>
 			<section class="contacts-info">
 				<h3 class="visually-hidden">Адрес и номер телефона</h3>
-				<p class="contacts-info-address">Адрес главного офиса и офлайн-магазина:</p>
+				<p class="contacts-info-address">Адрес главного офиса<br> и офлайн-магазина:</p>
 				<b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
 				<p class="contacts-info-tel">
-					Для заказов по телефону:
-					<a href="tel:+88124502525">8 812 450-25-25</a>
+					Для заказов по телефону:<br>
+					<a href="tel:+88124502525">8 812 450-25-25</a><br>
 					(с 10 до 20 ежедневно) 
 				</p>
 				<button class="btn" type="button">Форма обратной связи</button>
@@ -235,7 +237,7 @@
 						<label for="feedback-email-field">Ваша почта для ответа?</label>
 					</p>
 					<p class="form-group">
-						<textarea id="feedback-comment-field" name="feedback-comment-field" rows="10" cols="58"></textarea>
+						<textarea id="feedback-comment-field" name="feedback-comment-field"></textarea>
 						<label for="feedback-comment-field">Напишите что-нибудь...</label>
 					</p>
 					<button class="btn" type="submit">Отправить</button>
@@ -263,19 +265,19 @@
 			</li>
 		</ul>
 		<div class="footer-links">
-			<a class="for-suppliers" href="#">Для поставщиков</a>
-			<a class="about-production" href="#">О производстве</a>
+			<a class="for-suppliers link" href="#">Для поставщиков</a>
+			<a class="about-production link" href="#">О производстве</a>
 		</div>
 		<div class="footer-links">
-			<a class="our-documents" href="#">Наши документы</a>
-			<a class="environmental-standards" href="#">Экологические стандарты</a>
+			<a class="our-documents link" href="#">Наши документы</a>
+			<a class="environmental-standards link" href="#">Экологические стандарты</a>
 		</div>
 		<div class="footer-copyright">
 			<a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
 				<img src="img/logos/logo-htmlacademy-small.svg" width="122" height="39" alt="Логотип HTML Academy">
 			</a>
 			<p>Сделано в 
-				<a class="link-html-academy" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> &copy; 2018
+				<a class="link-html-academy link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> &copy; 2018
 			</p>
 		</div>
 	</footer>
