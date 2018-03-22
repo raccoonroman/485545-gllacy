@@ -298,7 +298,7 @@ input[type="checkbox"].visually-hidden {
     }
 }
 
-.nav-item-catalog > a:hover ~ .nav-submenu-items,
+.nav-item-catalog:hover .nav-submenu-items,
 .nav-item-catalog > a:focus ~ .nav-submenu-items {
     display: block;
 }
@@ -448,8 +448,18 @@ input[type="checkbox"].visually-hidden {
         vertical-align: top;
     }
 
-    .open-basket-delete {
+    .btn-delete {
+        padding: 3px;
+        padding-bottom: 0;
+        cursor: pointer;
+        background-color: transparent;
+        border: 0;
+    }
 
+    .btn-delete::before {
+        content: url(../img/icons/X.svg);
+        width: 11px;
+        height: 11px;
     }
 
     .open-basket-img {
@@ -1062,6 +1072,7 @@ input[type="checkbox"].visually-hidden {
 
 
 .feedback {
+    position: relative;
     width: 477px;
     min-height: 442px;
     padding: 15px 25px 27px 24px;
@@ -1097,6 +1108,23 @@ input[type="checkbox"].visually-hidden {
 
     .btn {
         margin-left: auto;
+    }
+
+    .btn-close {
+        position: absolute;
+        top: 10px;
+        right: 11px;
+        padding: 5px;
+        padding-bottom: 2px;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+    }
+
+    .btn-close::before {
+        content: url(../img/icons/X-big.svg);
+        width: 18px;
+        height: 17px;
     }
 }
 
@@ -1231,6 +1259,10 @@ input[type="checkbox"].visually-hidden {
         cursor: default;
     }
 
+    > a:active {
+        box-shadow: none;
+    }
+
     > a::before {
         height: 0;
         width: 0;
@@ -1242,6 +1274,12 @@ input[type="checkbox"].visually-hidden {
     a {
         color: #fff;
         background-color: #d07058;
+    }
+
+    a:hover,
+    a:focus {
+        background-color: #d07058;
+        cursor: default;
     }
 }
 
@@ -1272,28 +1310,54 @@ input[type="checkbox"].visually-hidden {
     line-height: 41px;
 }
 
-div.filter-form-group {
+.filter-form-group {
+    display: inline-block;
+    vertical-align: top;
+
+    p {
+        margin: 0;
+        margin-bottom: 3px;
+        margin-left: 15px;
+    }
+
     label {
+        position: relative;
         font-size: 14px;
         font-weight: 500;
         line-height: 16px;
     }
 }
 
-select.filter-sort-field {
+.filter-sort-field {
+    width: 193px;
     height: 36px;
-    padding: 5px 10px;
+    text-overflow: clip;
+    padding: 0 15px;
     font-size: 16px;
     font-weight: 500;
     line-height: 18px;
-    color: #ffffff;
-    background-color: $color;
+    color: #fff;
+    background: $color url(../img/icons/down-dir-white.svg) no-repeat;
+    background-position: right 14px top 13px;
     border-radius: 18px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        color: #323232;
+        background-color: #fff;
+        background-image: url(../img/icons/down-dir-black.svg);
+        outline: 0;
+    }
 
     option {
         font-size: 14px;
         color: #323232;
-    }
+    } 
 }
 
 fieldset.filter-form-group {
@@ -1359,6 +1423,7 @@ fieldset.filter-form-group {
     display: flex;
     justify-content: flex-end;
     position: relative;
+    left: 10px;
     list-style: none;
     margin: 0;
     margin-bottom: 30px;
@@ -1369,7 +1434,7 @@ fieldset.filter-form-group {
         content: "";
         position: absolute;
         bottom: -30px; 
-        left: 0;
+        left: -10px;
         height: 1px;
         width: 100%;
         background-color: rgba(255, 255, 255, .3);
@@ -1381,6 +1446,7 @@ fieldset.filter-form-group {
 .pagination-item {
         display: inline-block;
         vertical-align: middle;
+        margin-left: 5px;
 
     a {
         display: block;
