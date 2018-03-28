@@ -394,35 +394,48 @@ input[type="checkbox"].visually-hidden {
     }
 }
 
-.nav-user-basket .btn {
-    min-width: 117px;
-    padding-left: 45px;
-    text-align: left;
+.nav-user-basket {
 
-    &::before {
-        content: url(../img/icons/basket.svg);
+    .btn-backet {
+        position: relative;
+        min-width: 117px;
+        padding-left: 45px;
+        text-align: left;
+    }
+
+    .btn-backet-full {
+        color: #323232;
+        background-color: #f8f7f4;
+    }    
+}
+
+.btn-backet {
+
+    svg {
         position: absolute;
         top: 6px;
         left: 16px;
     }
+
+    .content {
+        fill: transparent;
+    }
+
+    circle,
+    .carcass {
+        fill: #fff;
+    }
 }
 
-.nav-user-basket-full {
-    position: relative;
+.btn-backet-full {
 
-     > .btn {
-        min-width: 117px;
-        padding-left: 45px;
-        text-align: left;
-        color: #323232;
-        background-color: #f7f6f3;
-     }
-    
-    > .btn::before {
-        content: url(../img/icons/basket-full.svg);
-        position: absolute;
-        top: 6px;
-        left: 16px;
+    .content {
+        fill: #E84D37;
+    }
+
+    circle,
+    .carcass {
+        fill: #343434;
     }
 
     &:hover .open-basket,
@@ -524,20 +537,20 @@ input[type="checkbox"].visually-hidden {
         width: 92px;
         padding-left: 35px;
     }
-    
-    > .btn::before {
-        content: url(../img/icons/login.svg);
+
+    svg {
         position: absolute;
         top: 6px;
         left: 16px;
     }
+    
+    g {
+        fill: #fff;
+    }
 
-    > .btn:hover::before,
-    > .btn:focus::before {
-        content: url(../img/icons/login-hover.svg);
-        position: absolute;
-        top: 6px;
-        left: 16px; 
+    > .btn:hover g,
+    > .btn:focus g {
+        fill: #353535;
     }
 
     > .btn:hover,
@@ -610,27 +623,26 @@ input[type="checkbox"].visually-hidden {
 
     .btn {
         width: 32px;
-        font-size: 0;
     }
-    
-    .btn::before {
-        content: url(../img/icons/loupe.svg);
+
+    svg {
         position: absolute;
         top: 7px;
         left: 7px;
     }
 
-    .btn:hover::before,
-    .btn:focus::before {
-        content: url(../img/icons/loupe-hover.svg);
-        position: absolute;
-        top: 7px;
-        left: 7px; 
+    path {
+        fill: #fff;
     }
 
-    .btn:hover,
+    .btn:hover ,
     .btn:focus {
         background-color: #fff;
+    }
+
+    .btn:hover path ,
+    .btn:focus path {
+        fill: #333;
     }
 }
 
