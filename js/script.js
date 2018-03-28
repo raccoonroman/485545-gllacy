@@ -5,15 +5,16 @@ var close = document.querySelector(".btn-close");
 var form = popup.querySelector("form");
 var yourName = popup.querySelector("[name=feedback-name-field]");
 var email = popup.querySelector("[name=feedback-email-field]");
+var popupLabel = popup.querySelector("label");
 
-var isStorageSupport = true;
-var storage = "";
+/*var isStorageSupport = true;
+var storage = "";*/
 
-try {
+/*try {
 	storage = localStorage.getItem("yourName");
 } catch (err) {
 	isStorageSupport = false;
-}
+}*/
 
 feedback.addEventListener("click", function(evt) {
 	evt.preventDefault();
@@ -21,12 +22,12 @@ feedback.addEventListener("click", function(evt) {
 	overlay.classList.add("modal-overlay-show");
 
 	yourName.focus();
-	if (storage) {
+	/*if (storage) {
 		yourName.value = storage;
 		email.focus();
 	} else {
 		yourName.focus();
-	}
+	}*/
 });
 
 close.addEventListener("click", function(evt) {
@@ -42,11 +43,11 @@ form.addEventListener("submit", function(evt) {
 		popup.classList.remove("modal-feedback-error");
 		popup.offsetWidth = popup.offsetWidth;
 		popup.classList.add("modal-feedback-error");
-	} else {
+	}/* else {
 		if (isStorageSupport) {
 			localStorage.setItem("yourName", yourName.value);
 		}
-	}
+	}*/
 });
 
 
@@ -61,3 +62,13 @@ window.addEventListener("keydown", function(evt) {
 		}
 	}
 });
+
+var yourNameFixed = document.getElementById("feedback-name-field").oninput = inputChange;
+
+function inputChange() {
+    if (event.target.value.length) {
+       popupLabel.classList.add("js-input-not-empty");
+    } else {
+        popupLabel.classList.remove("js-input-not-empty");
+    }
+}
