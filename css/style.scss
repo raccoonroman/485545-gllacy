@@ -395,9 +395,9 @@ input[type="checkbox"].visually-hidden {
 }
 
 .nav-user-basket {
+    position: relative;
 
     .btn-backet {
-        position: relative;
         min-width: 117px;
         padding-left: 45px;
         text-align: left;
@@ -437,11 +437,11 @@ input[type="checkbox"].visually-hidden {
     .carcass {
         fill: #343434;
     }
+}
 
-    &:hover .open-basket,
-    &:focus .open-basket {
-        display: block;
-    }
+.nav-user-basket-full:hover .open-basket,
+.nav-user-basket-full:focus .open-basket {
+    display: block;
 }
 
 .open-basket {
@@ -1493,6 +1493,10 @@ select.filter-sort-field {
     -ms-appearance: none;
     appearance: none;
     cursor: pointer;
+
+    &::-ms-expand {
+        display: none;
+    }
 
     &:hover,
     &:focus {

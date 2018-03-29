@@ -5,7 +5,6 @@ var close = document.querySelector(".btn-close");
 var form = popup.querySelector("form");
 var yourName = popup.querySelector("[name=feedback-name-field]");
 var email = popup.querySelector("[name=feedback-email-field]");
-var popupLabel = popup.querySelector("label");
 
 /*var isStorageSupport = true;
 var storage = "";*/
@@ -66,6 +65,7 @@ window.addEventListener("keydown", function(evt) {
 var yourNameFixed = document.getElementById("feedback-name-field").oninput = inputChange;
 
 function inputChange() {
+	var popupLabel = popup.querySelector("label");
     if (event.target.value.length) {
        popupLabel.classList.add("js-input-not-empty");
     } else {
