@@ -972,6 +972,14 @@ input[type="checkbox"].visually-hidden {
         color: #323232;
     }
 
+    li::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 49px;
+        height: 49px;
+    }
+
     .adventage-production, 
     .adventage-materials {
         margin-right: 1.2%;
@@ -983,32 +991,22 @@ input[type="checkbox"].visually-hidden {
     }
 }
 
+
+
 .adventage-production::before {
     content: url(../img/icons/ice-cream.svg);
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 .adventage-partners::before {
     content: url(../img/icons/cow.svg);
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 .adventage-materials::before {
     content: url(../img/icons/leaf.svg);
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 .adventage-delivery::before {
     content: url(../img/icons/thermometer.svg);
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 
