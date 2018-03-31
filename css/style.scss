@@ -75,16 +75,16 @@ body {
 /*для загрузки изображений слайдов заранее*/
 .bg::before,
 .bg::after {
-  content: "";
-  visibility: hidden;
+    content: "";
+    visibility: hidden;
 }
 
 .bg::before {
-  background-image: url(../img/slides/slide2.png);
+    background-image: url(../img/slides/slide2.png);
 }
 
 .bg::after {
-  background-image: url(../img/slides/slide3.png);
+    background-image: url(../img/slides/slide3.png);
 }
 
 .wrapper {
@@ -214,8 +214,6 @@ input[type="checkbox"].visually-hidden {
     input:focus + label,
     textarea:focus + label {
         color: #5b9ddf;
-        /*-webkit-transform: translateY(-24px);
-        transform: translateY(-24px);*/
     }
 
     input:focus + label,
@@ -675,7 +673,6 @@ input[type="checkbox"].visually-hidden {
 }
 
 
-
 .aside-info {
     position: absolute;
     top: 63px;
@@ -706,9 +703,7 @@ input[type="checkbox"].visually-hidden {
     }
 }
 
-
 /*СЛАЙДЕР*/
-
 .slider {
     position: relative;
     padding-top: 307px;
@@ -768,28 +763,28 @@ input[type="checkbox"].visually-hidden {
 .product-1:checked ~ .bg .slide1,
 .product-2:checked ~ .bg .slide2,
 .product-3:checked ~ .bg .slide3 {
-  display: block;
+    display: block;
 }
 
 .product-1:checked ~ .bg label[for="product-1"],
 .product-2:checked ~ .bg label[for="product-2"],
 .product-3:checked ~ .bg label[for="product-3"] {
-  background-color: #fff;
+    background-color: #fff;
 }
 
 .product-1:checked ~ .bg {
-  background-color: #849d8f;
-  background-image: url(../img/slides/slide1.png);
+    background-color: #849d8f;
+    background-image: url(../img/slides/slide1.png);
 }
 
 .product-2:checked ~ .bg {
-  background-color: #8996a6;
-  background-image: url(../img/slides/slide2.png);
+    background-color: #8996a6;
+    background-image: url(../img/slides/slide2.png);
 }
 
 .product-3:checked ~ .bg {
-  background-color: #9d8b84;
-  background-image: url(../img/slides/slide3.png);
+    background-color: #9d8b84;
+    background-image: url(../img/slides/slide3.png);
 }
 
 
@@ -924,6 +919,7 @@ input[type="checkbox"].visually-hidden {
     border-radius: 6px;
     box-shadow: $box-shadow20;
     opacity: 0;
+    transition: opacity .3s;
 
     .btn {
         position: absolute;
@@ -1276,10 +1272,12 @@ input[type="checkbox"].visually-hidden {
         background: url(../img/icons/twitter.svg) no-repeat;
         opacity: 0.8;
     }
+
     .social-btn-tw:hover,
     .social-btn-tw:focus {
         opacity: 1;
     }
+
     .social-btn-tw:active {
         opacity: 0.8;
     }
@@ -1289,23 +1287,26 @@ input[type="checkbox"].visually-hidden {
         background: url(../img/icons/instagram.svg) no-repeat; 
         opacity: 0.8;
     }
+
     .social-btn-in:hover,
     .social-btn-in:focus {
         opacity: 1;
     }
+
     .social-btn-in:active {
         opacity: 0.8;
     }
-
 
     .social-btn-fb {
         background: url(../img/icons/fb.svg) no-repeat;
         opacity: 0.8;
     }
+
     .social-btn-fb:hover,
     .social-btn-fb:focus {
         opacity: 1;
     }
+
     .social-btn-fb:active {
         opacity: 0.8;
     }
@@ -1314,10 +1315,12 @@ input[type="checkbox"].visually-hidden {
         background: url(../img/icons/vk.svg) no-repeat;
         opacity: 0.8;
     }
+
     .social-btn-vk:hover,
     .social-btn-vk:focus {
         opacity: 1;
     }
+
     .social-btn-vk:active {
         opacity: 0.8;
     }
@@ -1365,7 +1368,6 @@ input[type="checkbox"].visually-hidden {
 }
 
 /*catalog page*/
-
 .catalog .page-header {
     margin: 0;
 }
@@ -1470,6 +1472,10 @@ input[type="checkbox"].visually-hidden {
         font-weight: 500;
         line-height: 18px;
         color: rgba(255, 255, 255, .8);
+    }
+
+    input:disabled + label {
+        color: rgba(255, 255, 255, .4);
     }
 }
 
@@ -1615,6 +1621,18 @@ select.filter-sort-field {
     input:checked:focus + label::after {
         background-color: #fff;
     }
+
+    input:disabled + label::before {
+        border-color: rgba(255, 255, 255, .4);
+    }
+
+    input:disabled + label::after {
+        background-color: transparent;
+    }
+
+    input:checked:disabled + label::after {
+        background-color: rgba(255, 255, 255, .4);
+    }
 }
 
 .filter-fillers {
@@ -1669,6 +1687,18 @@ select.filter-sort-field {
     input:checked + label:hover::after,
     input:checked:focus + label::after {
         opacity: 1;
+    }
+
+    input:disabled + label::before {
+        border-color: rgba(255, 255, 255, .4);
+    }
+    
+    input:checked:disabled + label::before {
+        border-color: transparent;
+    }
+
+    input:checked:disabled + label::after {
+        opacity: 0.4;
     }
 }
 
@@ -1752,6 +1782,7 @@ select.filter-sort-field {
     a:focus {
         background-color: $color;
     }
+
     a:active {
         color: #000;
         background-color: #fff;
