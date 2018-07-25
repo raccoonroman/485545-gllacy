@@ -97,7 +97,7 @@ $box-shadow20: 0 20px 20px rgba(0, 0, 0, 0.4);
     }
 }
 
-@-webkit-keyframes jelly { 
+@-webkit-keyframes jelly {
     0% { -webkit-transform: matrix3d(0.1, 0, 0, 0, 0, 0.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.1, 0, 0, 0, 0, 0.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
     3.4% { -webkit-transform: matrix3d(0.384, 0, 0, 0, 0, 0.466, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.384, 0, 0, 0, 0, 0.466, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
     4.7% { -webkit-transform: matrix3d(0.505, 0, 0, 0, 0, 0.639, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.505, 0, 0, 0, 0, 0.639, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
@@ -123,10 +123,10 @@ $box-shadow20: 0 20px 20px rgba(0, 0, 0, 0.4);
     75.28% { -webkit-transform: matrix3d(1.001, 0, 0, 0, 0, 1.003, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.001, 0, 0, 0, 0, 1.003, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
     85.49% { -webkit-transform: matrix3d(0.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
     90.69% { -webkit-transform: matrix3d(0.999, 0, 0, 0, 0, 0.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.999, 0, 0, 0, 0, 0.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
-    100% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
+    100% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
 }
 
-@keyframes jelly { 
+@keyframes jelly {
     0% { -webkit-transform: matrix3d(0.1, 0, 0, 0, 0, 0.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.1, 0, 0, 0, 0, 0.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
     3.4% { -webkit-transform: matrix3d(0.384, 0, 0, 0, 0, 0.466, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.384, 0, 0, 0, 0, 0.466, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
     4.7% { -webkit-transform: matrix3d(0.505, 0, 0, 0, 0, 0.639, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.505, 0, 0, 0, 0, 0.639, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
@@ -152,7 +152,7 @@ $box-shadow20: 0 20px 20px rgba(0, 0, 0, 0.4);
     75.28% { -webkit-transform: matrix3d(1.001, 0, 0, 0, 0, 1.003, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.001, 0, 0, 0, 0, 1.003, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
     85.49% { -webkit-transform: matrix3d(0.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
     90.69% { -webkit-transform: matrix3d(0.999, 0, 0, 0, 0, 0.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.999, 0, 0, 0, 0, 0.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
-    100% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
+    100% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
 }
 
 *, *::before, *::after {
@@ -180,7 +180,7 @@ body {
     background-image: url(../img/slides/slide1.png);
     background-repeat: no-repeat;
     background-position: top center;
-    transition: 
+    transition:
         background-image 0.5s ease,
         background-color 0.5s ease;
 }
@@ -254,7 +254,7 @@ input[type="checkbox"].visually-hidden {
     &:focus {
         background-image: linear-gradient(#f58669, #ec6f5e);
         box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
-    }   
+    }
 
     &:active {
         background-image: linear-gradient(#d74632, #e1613e);
@@ -330,7 +330,7 @@ input[type="checkbox"].visually-hidden {
     }
 
     input:focus + label,
-    textarea:focus + label, 
+    textarea:focus + label,
     .js-input-not-empty,
     input:required:valid + label,
     textarea:required:valid + label {
@@ -358,7 +358,7 @@ input[type="checkbox"].visually-hidden {
     }
 
     .page-header-logo {
-        margin-right: 11px; 
+        margin-right: 11px;
         width: 154px;
         height: 64px;
     }
@@ -443,7 +443,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .nav-submenu-item {
-    
+
     a {
         padding: 10px 0 8px 20px;
         display: block;
@@ -518,7 +518,7 @@ input[type="checkbox"].visually-hidden {
     .btn-backet-full {
         color: #323232;
         background-color: #f8f7f4;
-    }    
+    }
 }
 
 .btn-backet {
@@ -586,7 +586,7 @@ input[type="checkbox"].visually-hidden {
     table {
         border-collapse: collapse;
         width: 100%;
-        font-size: 13px; 
+        font-size: 13px;
         line-height: 16px;
         color: #323232;
     }
@@ -655,7 +655,7 @@ input[type="checkbox"].visually-hidden {
         top: 6px;
         left: 16px;
     }
-    
+
     g {
         fill: #fff;
     }
@@ -689,7 +689,7 @@ input[type="checkbox"].visually-hidden {
     background-color: #f8f7f4;
     border-radius: 5px;
     box-shadow: $box-shadow20;
-    
+
     .form-group {
         margin-bottom: 20px;
     }
@@ -1020,7 +1020,7 @@ input[type="checkbox"].visually-hidden {
         text-shadow: 1px 2px 3px rgba(49, 50, 53, .5);
         z-index: 3;
     }
-}   
+}
 
 .catalog-item-hover {
     position: absolute;
@@ -1090,7 +1090,7 @@ input[type="checkbox"].visually-hidden {
         height: 49px;
     }
 
-    .adventage-production, 
+    .adventage-production,
     .adventage-materials {
         margin-right: 1.2%;
     }
@@ -1124,7 +1124,7 @@ input[type="checkbox"].visually-hidden {
 .tidings {
     display: flex;
     margin-bottom: 40px;
-    
+
     .tiding {
         width: 48.85%;
         height: 220px;
@@ -1143,11 +1143,11 @@ input[type="checkbox"].visually-hidden {
         flex-direction: column;
         border: 5px solid transparent;
         border-left-width: 6px;
-        background-image: 
-            linear-gradient(#f8f7f4, #f8f7f4), 
-            repeating-linear-gradient(135deg, 
+        background-image:
+            linear-gradient(#f8f7f4, #f8f7f4),
+            repeating-linear-gradient(135deg,
                 #f8f7f4 7px, #92cdff 7px,
-                #92cdff 14px, #f8f7f4 14px, 
+                #92cdff 14px, #f8f7f4 14px,
                 #f8f7f4 21px, #fe9e90 21px,
                 #fe9e90 28px, #f8f7f4 28px, #f8f7f4 35px);
         background-origin: padding-box, border-box;
@@ -1156,7 +1156,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .blog {
-     
+
     p {
         margin: 3px 0;
         color: #323232;
@@ -1230,6 +1230,8 @@ input[type="checkbox"].visually-hidden {
         top: 0;
         left: 0;
         z-index: 1;
+        max-width: 100%;
+        height: auto;
     }
 }
 
@@ -1380,7 +1382,7 @@ input[type="checkbox"].visually-hidden {
         flex-wrap: wrap;
     }
 }
-    
+
 
 .footer-social {
     display: flex;
@@ -1413,7 +1415,7 @@ input[type="checkbox"].visually-hidden {
 
 
     .social-btn-in {
-        background: url(../img/icons/instagram.svg) no-repeat; 
+        background: url(../img/icons/instagram.svg) no-repeat;
         opacity: 0.8;
     }
 
@@ -1493,7 +1495,7 @@ input[type="checkbox"].visually-hidden {
 
     img {
         margin-left: -8px;
-    } 
+    }
 }
 
 /*catalog page*/
@@ -1637,13 +1639,13 @@ select.filter-sort-field {
         color: #323232;
         background-color: #fff;
         background-image: url(../img/icons/down-dir-black.svg);
-        
+
     }
 
     option {
         font-size: 14px;
         color: #323232;
-    } 
+    }
 }
 
 .filter-range {
@@ -1826,7 +1828,7 @@ select.filter-sort-field {
     input:disabled + label::before {
         border-color: rgba(255, 255, 255, .4);
     }
-    
+
     input:checked:disabled + label::before {
         border-color: transparent;
     }
@@ -1874,18 +1876,18 @@ select.filter-sort-field {
     list-style: none;
     margin: 0;
     margin-bottom: 30px;
-    padding: 0; 
+    padding: 0;
     height: 25px;
 
     &::after {
         content: "";
         position: absolute;
-        bottom: -30px; 
+        bottom: -30px;
         left: -10px;
         height: 1px;
         width: 100%;
         background-color: rgba(255, 255, 255, .3);
-    }   
+    }
 }
 
 
@@ -1929,7 +1931,7 @@ select.filter-sort-field {
     a {
         color: $color;
     }
-    
+
     a:hover,
     a:focus,
     a:active {
